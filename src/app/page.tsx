@@ -1,101 +1,270 @@
+import HighlightCard from "@/components/HighlightCard";
+import LinkBadge from "@/components/LinkBadge";
+import TextBadge from "@/components/TextBadge";
 import Image from "next/image";
+
+const socials = [
+  {
+    title: "LinkedIn",
+    url: "https://www.linkedin.com/in/zaryab-husain-ghori-30113359/",
+  },
+  {
+    title: "Github",
+    url: "https://github.com/imzaryab",
+  },
+  {
+    title: "Codepen",
+    url: "https://codepen.io/ImZaryab",
+  },
+];
+
+const projects = [
+  {
+    title: "AverageBlog",
+    description:
+      "An example blog site built using Astro and Tailwind, utilizing the power of SSG.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: false,
+    demoUrl: "https://averageblogastro.vercel.app/",
+    codeUrl: "",
+  },
+  {
+    title: "AdHost",
+    description:
+      "A sample website for a digital marketing agency with some fancy✨ animations.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://imzaryab.github.io/adhost/",
+    codeUrl: "https://github.com/ImZaryab/adhost",
+  },
+  {
+    title: "Planzy",
+    description:
+      "An app that allows participants to create and vote for plans. Built using NextJs, Pocketbase and Tailwind.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://planzy-web.vercel.app/",
+    codeUrl: "https://github.com/ImZaryab/planzy-web",
+  },
+];
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              src/app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <main className="bg-[#151515] sm:bg-backdrop min-h-dvh w-full flex flex-col gap-10 items-center sm:p-12 selection:bg-slate-700 lowercase">
+      {/* HERO SECTION FOR MD-LG SCREENS */}
+      <section className="hidden w-full sm:w-[80%] lg:w-[60%] xl:max-w-[40%] sm:flex justify-center relative">
+        <HighlightCard>
+          <div className="w-full flex flex-col gap-10">
+            <div className="flex items-center gap-4">
+              <Image
+                src={"/scream.webp"}
+                height={86}
+                width={86}
+                alt=""
+                className="rounded-full"
+              />
+              <div>
+                <h1 className="text-xl text-foreground">Zaryab Husain Ghori</h1>
+                <h2 className="text-zinc-400">Designer & Developer</h2>
+              </div>
+            </div>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+            <div className="text-zinc-400">
+              <p>
+                A challenge tackling full stack developer with experience in
+                data driven web applications, leadership roles and working under
+                pressure in fast paced environments.
+              </p>
+            </div>
+
+            <div className="text-zinc-400">
+              <ul className="flex flex-col gap-2">
+                <li>SEO Intern @ E-strats (Jul, 2019 - Sep 2019)</li>
+                <li>Full Stack Intern @ Zaytrics (Jul, 2021 - Sep 2021)</li>
+                <li>Software Engineer @ Virtury (Jan, 2023 - Jun, 2023)</li>
+                <li>Head of Operations @ Virtury (Jun, 2023 - Dec, 2023)</li>
+                <li>Full Stack Developer @ AIO (Jan, 2024 - Present)</li>
+              </ul>
+            </div>
+
+            <div className="text-zinc-400 w-full flex justify-end">
+              <a
+                download={""}
+                href="./resume-zaryab.pdf"
+                className="py-2 px-6 rounded-full flex items-center gap-1 border border-slate-700 hover:cursor-pointer hover:bg-slate-700 hover:text-white transition duration-300"
+              >
+                <span>résumé</span>
+                <Image
+                  src={"/download.svg"}
+                  height={24}
+                  width={24}
+                  alt="Download résumé Icon"
+                />
+              </a>
+            </div>
+          </div>
+        </HighlightCard>
+      </section>
+
+      {/* HERO SECTION FOR SMALL SCREENS */}
+      <section className="p-4 flex sm:hidden">
+        <div className="text-sm">
+          <div className="w-full flex flex-col gap-10">
+            <div className="flex items-center gap-4">
+              <Image
+                src={"/scream.webp"}
+                height={86}
+                width={86}
+                alt=""
+                className="rounded-full"
+              />
+              <div>
+                <h1 className="text-lg">Zaryab Husain Ghori</h1>
+                <h2 className="text-zinc-400">Designer & Developer</h2>
+              </div>
+            </div>
+
+            <div className="text-zinc-400">
+              <p>
+                A challenge tackling full stack developer with experience in
+                data driven web applications, leadership roles and working under
+                pressure in fast paced environments.
+              </p>
+            </div>
+
+            <div className="text-zinc-400">
+              <ul className="flex flex-col gap-2">
+                <li>
+                  SEO Intern @ E-strats
+                  <br />
+                  (Jul, 2019 - Sep 2019)
+                </li>
+                <li>
+                  Full Stack Intern @ Zaytrics <br /> (Jul, 2021 - Sep 2021)
+                </li>
+                <li>
+                  Software Engineer @ Virtury <br /> (Jan, 2023 - Jun, 2023)
+                </li>
+                <li>
+                  Head of Operations @ Virtury <br /> (Jun, 2023 - Dec, 2023)
+                </li>
+                <li>
+                  Full Stack Developer @ AIO <br /> (Jan, 2024 - Present)
+                </li>
+              </ul>
+            </div>
+
+            <div className="text-zinc-400 w-full flex justify-end">
+              <button className="py-2 px-6 rounded-full flex items-center gap-1 border border-slate-700 hover:bg-slate-700 hover:text-white transition duration-300">
+                <span>résumé</span>
+                <Image
+                  src={"/download.svg"}
+                  height={24}
+                  width={24}
+                  alt="Download résumé Icon"
+                />
+              </button>
+            </div>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
-    </div>
+      </section>
+
+      {/* SOCIALS */}
+      <section className="w-full sm:w-[80%] lg:w-[60%] xl:max-w-[40%]">
+        <div className="flex flex-col gap-2 px-4 sm:px-0">
+          <h1 className="text-lg sm:text-xl">Socials</h1>
+          <ul className="flex gap-2">
+            {socials.map((social, index) => (
+              <li key={index}>
+                <LinkBadge title={social.title} href={social.url ?? ""} />
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTION FOR MD-LG SCREEN */}
+      <section className="hidden sm:block w-full sm:w-[80%] lg:w-[60%] xl:max-w-[40%]">
+        <div className="flex flex-col gap-2">
+          <h1 className="text-lg sm:text-xl">Projects</h1>
+          <ul className="flex flex-col gap-6">
+            {projects.map((project, index) => (
+              <li key={index} className="relative">
+                <HighlightCard>
+                  <div className="text-zinc-400 flex flex-col gap-4">
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <h1>{project.title}</h1>
+                        <TextBadge isSideProject={project.isSideProject} />
+                      </div>
+                      <p className="mt-2 text-sm">{project.description}</p>
+                    </div>
+
+                    <div className="flex items-center gap-2">
+                      <LinkBadge
+                        border={false}
+                        title="Demo"
+                        href={project.demoUrl ?? "#"}
+                        disabled={!project.hasDemo}
+                      />
+                      <LinkBadge
+                        border={false}
+                        title="Code"
+                        href={project.codeUrl ?? "#"}
+                        disabled={!project.hasCode}
+                      />
+                    </div>
+                  </div>
+                </HighlightCard>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+
+      {/* PROJECTS SECTION FOR SMALL SCREENS */}
+      <section className="sm:hidden w-full p-4">
+        <div className="flex flex-col gap-2">
+          <h1 className="text-lg sm:text-xl">Projects</h1>
+          <ul className="flex flex-col gap-8">
+            {projects.map((project, index) => (
+              <li
+                key={index}
+                className="border border-slate-700 p-4 rounded-xl"
+              >
+                <div className="text-zinc-400 flex flex-col gap-4">
+                  <div>
+                    <div className="flex items-center gap-2">
+                      <div className="h-[20px] w-[20px] bg-violet-800 rounded-full"></div>
+                      <h1>{project.title}</h1>
+                      <TextBadge isSideProject={project.isSideProject} />
+                    </div>
+                    <p className="mt-2 text-sm">{project.description}</p>
+                  </div>
+
+                  <div className="flex items-center gap-2">
+                    <LinkBadge
+                      border={false}
+                      title="Demo"
+                      href={project.demoUrl ?? "#"}
+                      disabled={!project.hasDemo}
+                    />
+                    <LinkBadge
+                      border={false}
+                      title="Code"
+                      href={project.codeUrl ?? "#"}
+                      disabled={!project.hasCode}
+                    />
+                  </div>
+                </div>
+              </li>
+            ))}
+          </ul>
+        </div>
+      </section>
+    </main>
   );
 }
