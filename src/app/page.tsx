@@ -20,6 +20,26 @@ const socials = [
 
 const projects = [
   {
+    title: "Blogsignal",
+    description:
+      "A sample landing page with some fancy✨ animations.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://blogsignal.vercel.app/",
+    codeUrl: "https://github.com/ImZaryab/blogsignal",
+  },
+  {
+    title: "AdHost",
+    description:
+      "A sample website for a digital marketing agency.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://imzaryab.github.io/adhost/",
+    codeUrl: "https://github.com/ImZaryab/adhost",
+  },
+  {
     title: "AverageBlog",
     description:
       "An example blog site built using Astro and Tailwind, utilizing the power of SSG.",
@@ -28,16 +48,6 @@ const projects = [
     hasCode: false,
     demoUrl: "https://averageblogastro.vercel.app/",
     codeUrl: "",
-  },
-  {
-    title: "AdHost",
-    description:
-      "A sample website for a digital marketing agency with some fancy✨ animations.",
-    isSideProject: true,
-    hasDemo: true,
-    hasCode: true,
-    demoUrl: "https://imzaryab.github.io/adhost/",
-    codeUrl: "https://github.com/ImZaryab/adhost",
   },
   {
     title: "Planzy",
