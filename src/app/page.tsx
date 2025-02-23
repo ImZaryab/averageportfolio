@@ -30,6 +30,16 @@ const projects = [
     codeUrl: "https://github.com/ImZaryab/blogsignal",
   },
   {
+    title: "Wallhaven",
+    description:
+      "A website to download a selection of wallpapers by adding them to a cart.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://wallhaven-rose.vercel.app/",
+    codeUrl: "https://github.com/ImZaryab/WallHaven-Server",
+  },
+  {
     title: "AdHost",
     description:
       "A sample website for a digital marketing agency.",
