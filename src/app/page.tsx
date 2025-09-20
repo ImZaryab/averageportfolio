@@ -96,19 +96,18 @@ export default function Home() {
 
             <div className="text-zinc-400">
               <p>
-                A challenge tackling full stack developer with experience in
-                data driven web applications, leadership roles and working under
-                pressure in fast paced environments.
+                A challenge-driven full stack developer experienced in building complex web applications,
+                thriving in fast-paced environments, and taking on leadership roles.
               </p>
             </div>
 
             <div className="text-zinc-400">
               <ul className="flex flex-col gap-2">
-                <li>SEO Intern @ E-strats (Jul, 2019 - Sep 2019)</li>
-                <li>Full Stack Intern @ Zaytrics (Jul, 2021 - Sep 2021)</li>
-                <li>Software Engineer @ Virtury (Jan, 2023 - Jun, 2023)</li>
+                <li>Full Stack Engineer @ AIO (Jan, 2024 - Present)</li>
                 <li>Head of Operations @ Virtury (Jun, 2023 - Dec, 2023)</li>
-                <li>Full Stack Developer @ AIO (Jan, 2024 - Present)</li>
+                <li>Software Engineer @ Virtury (Jan, 2023 - Jun, 2023)</li>
+                <li>Full Stack Intern @ Zaytrics (Jul, 2021 - Sep 2021)</li>
+                <li>SEO Intern @ E-strats (Jul, 2019 - Sep 2019)</li>
               </ul>
             </div>
 
@@ -118,7 +117,7 @@ export default function Home() {
                 href="./resume-zaryab.pdf"
                 className="py-2 px-6 rounded-full flex items-center gap-1 border border-slate-700 hover:cursor-pointer hover:bg-slate-700 hover:text-white transition duration-300"
               >
-                <span>résumé</span>
+                <span>résume</span>
                 <Image
                   src={"/download.svg"}
                   height={24}
