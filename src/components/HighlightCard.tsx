@@ -22,7 +22,7 @@ const HighlightCard = ({ children }: HighlightCardProps) => {
     <Card
       id="highlight_card"
       onMouseMove={handleMouseMove}
-      className="p-[2px] rounded-xl border-none"
+      className="p-[2px] rounded-xl border-none z-50"
     >
       <div id="card_border" />
       <div

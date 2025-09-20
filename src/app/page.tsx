@@ -1,6 +1,7 @@
 import HighlightCard from "@/components/HighlightCard";
 import LinkBadge from "@/components/LinkBadge";
 import TextBadge from "@/components/TextBadge";
+import { Spotlight } from "@/components/ui/spotlight-new";
 import Image from "next/image";
 
 const socials = [
@@ -76,6 +77,7 @@ export default function Home() {
     <main className="bg-[#151515] sm:bg-backdrop min-h-dvh w-full flex flex-col gap-10 items-center sm:p-12 selection:bg-slate-700 lowercase">
       {/* HERO SECTION FOR MD-LG SCREENS */}
       <section className="hidden w-full sm:w-[80%] lg:w-[60%] xl:max-w-[40%] sm:flex justify-center relative">
+        <Spotlight />
         <HighlightCard>
           <div className="w-full flex flex-col gap-10">
             <div className="flex items-center gap-4">
