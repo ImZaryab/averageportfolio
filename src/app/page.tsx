@@ -74,7 +74,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <main className="bg-[#151515] sm:bg-backdrop min-h-dvh w-full flex flex-col gap-10 items-center sm:p-12 selection:bg-slate-700 lowercase">
+    <main className="bg-[#151515] sm:bg-backdrop min-h-dvh w-full flex flex-col gap-10 items-center sm:p-12 selection:bg-slate-700 lowercase overflow-hidden">
       {/* HERO SECTION FOR MD-LG SCREENS */}
       <section className="hidden w-full sm:w-[80%] lg:w-[60%] xl:max-w-[40%] sm:flex justify-center relative">
         <Spotlight />
