@@ -22,8 +22,7 @@ const socials = [
 const projects = [
   {
     title: "Blogsignal",
-    description:
-      "A sample landing page with some fancy✨ animations.",
+    description: "A sample landing page with some fancy✨ animations.",
     isSideProject: true,
     hasDemo: true,
     hasCode: true,
@@ -42,8 +41,7 @@ const projects = [
   },
   {
     title: "AdHost",
-    description:
-      "A sample website for a digital marketing agency.",
+    description: "A sample website for a digital marketing agency.",
     isSideProject: true,
     hasDemo: true,
     hasCode: true,
@@ -96,8 +94,9 @@ export default function Home() {
 
             <div className="text-zinc-400">
               <p>
-                A challenge-driven full stack developer experienced in building complex web applications,
-                thriving in fast-paced environments, and taking on leadership roles.
+                A challenge-driven full stack developer experienced in building
+                complex web applications, thriving in fast-paced environments,
+                and taking on leadership roles.
               </p>
             </div>
 
@@ -122,7 +121,7 @@ export default function Home() {
                   src={"/download.svg"}
                   height={24}
                   width={24}
-                  alt="Download résumé Icon"
+                  alt="Download résume button"
                 />
               </a>
             </div>
@@ -150,9 +149,9 @@ export default function Home() {
 
             <div className="text-zinc-400">
               <p>
-                A challenge tackling full stack developer with experience in
-                data driven web applications, leadership roles and working under
-                pressure in fast paced environments.
+                A challenge-driven full stack developer experienced in building
+                complex web applications, thriving in fast-paced environments,
+                and taking on leadership roles.
               </p>
             </div>
 
@@ -164,26 +163,26 @@ export default function Home() {
                 <li>
                   Head of Operations @ Virtury <br /> (Jun, 2023 - Dec, 2023)
                 </li>
-                <li>Software Engineer @ Virtury <br /> (Jan, 2023 - Jun, 2023)</li>
+                <li>
+                  Software Engineer @ Virtury <br /> (Jan, 2023 - Jun, 2023)
+                </li>
                 <li>
                   Full Stack Intern @ Zaytrics <br /> (Jul, 2021 - Sep 2021)
                 </li>
                 <li>
-                  SEO Intern @ E-strats
-                  <br />
-                  (Jul, 2019 - Sep 2019)
+                  SEO Intern @ E-strats <br /> (Jul, 2019 - Sep 2019)
                 </li>
               </ul>
             </div>
 
             <div className="text-zinc-400 w-full flex justify-end">
               <button className="py-2 px-6 rounded-full flex items-center gap-1 border border-slate-700 hover:bg-slate-700 hover:text-white transition duration-300">
-                <span>résumé</span>
+                <span>résume</span>
                 <Image
                   src={"/download.svg"}
                   height={24}
                   width={24}
-                  alt="Download résumé Icon"
+                  alt="Download résume button"
                 />
               </button>
             </div>
