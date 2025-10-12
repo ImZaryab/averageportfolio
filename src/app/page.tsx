@@ -159,21 +159,19 @@ export default function Home() {
             <div className="text-zinc-400">
               <ul className="flex flex-col gap-2">
                 <li>
-                  SEO Intern @ E-strats
-                  <br />
-                  (Jul, 2019 - Sep 2019)
-                </li>
-                <li>
-                  Full Stack Intern @ Zaytrics <br /> (Jul, 2021 - Sep 2021)
-                </li>
-                <li>
-                  Software Engineer @ Virtury <br /> (Jan, 2023 - Jun, 2023)
+                  Full Stack Engineer @ AIO <br /> (Jan, 2024 - Present)
                 </li>
                 <li>
                   Head of Operations @ Virtury <br /> (Jun, 2023 - Dec, 2023)
                 </li>
+                <li>Software Engineer @ Virtury <br /> (Jan, 2023 - Jun, 2023)</li>
                 <li>
-                  Full Stack Developer @ AIO <br /> (Jan, 2024 - Present)
+                  Full Stack Intern @ Zaytrics <br /> (Jul, 2021 - Sep 2021)
+                </li>
+                <li>
+                  SEO Intern @ E-strats
+                  <br />
+                  (Jul, 2019 - Sep 2019)
                 </li>
               </ul>
             </div>
