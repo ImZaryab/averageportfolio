@@ -21,13 +21,14 @@ const socials = [
 
 const projects = [
   {
-    title: "Blogsignal",
-    description: "A sample landing page with some fancy✨ animations.",
+    title: "Anime Reel Builder",
+    description:
+      "Auto generate ready to publish anime reel for a given voiceover",
     isSideProject: true,
     hasDemo: true,
-    hasCode: true,
-    demoUrl: "https://blogsignal.vercel.app/",
-    codeUrl: "https://github.com/ImZaryab/blogsignal",
+    hasCode: false,
+    demoUrl: "https://anime-reel-builder.vercel.app/",
+    codeUrl: "",
   },
   {
     title: "Wallhaven",
@@ -38,6 +39,15 @@ const projects = [
     hasCode: true,
     demoUrl: "https://wallhaven-rose.vercel.app/",
     codeUrl: "https://github.com/ImZaryab/WallHaven-Server",
+  },
+  {
+    title: "Blogsignal",
+    description: "A sample landing page with some fancy✨ animations.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://blogsignal.vercel.app/",
+    codeUrl: "https://github.com/ImZaryab/blogsignal",
   },
   {
     title: "AdHost",
