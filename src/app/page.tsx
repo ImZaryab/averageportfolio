@@ -112,7 +112,8 @@ export default function Home() {
 
             <div className="text-zinc-400">
               <ul className="flex flex-col gap-2">
-                <li>Full Stack Engineer @ AIO (Jan, 2024 - Present)</li>
+                <li>Technical Consultant @ Akkar (Jan, 2026 - Mar, 2026)</li>
+                <li>Full Stack Engineer @ AIO (Jan, 2024 - Jan, 2026)</li>
                 <li>Head of Operations @ Virtury (Jun, 2023 - Dec, 2023)</li>
                 <li>Software Engineer @ Virtury (Jan, 2023 - Jun, 2023)</li>
                 <li>Full Stack Intern @ Zaytrics (Jul, 2021 - Sep 2021)</li>
