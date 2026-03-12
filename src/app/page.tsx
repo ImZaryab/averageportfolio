@@ -32,8 +32,7 @@ const projects = [
   },
   {
     title: "Wallhaven",
-    description:
-      "A website to download a selection of wallpapers by adding them to a cart.",
+    description: "Download a selection of wallpapers through a cart.",
     isSideProject: true,
     hasDemo: true,
     hasCode: true,
@@ -41,17 +40,8 @@ const projects = [
     codeUrl: "https://github.com/ImZaryab/WallHaven-Server",
   },
   {
-    title: "Blogsignal",
-    description: "A sample landing page with some fancy✨ animations.",
-    isSideProject: true,
-    hasDemo: true,
-    hasCode: true,
-    demoUrl: "https://blogsignal.vercel.app/",
-    codeUrl: "https://github.com/ImZaryab/blogsignal",
-  },
-  {
     title: "AdHost",
-    description: "A sample website for a digital marketing agency.",
+    description: "Sample landing page for a digital marketing agency.",
     isSideProject: true,
     hasDemo: true,
     hasCode: true,
@@ -59,14 +49,13 @@ const projects = [
     codeUrl: "https://github.com/ImZaryab/adhost",
   },
   {
-    title: "AverageBlog",
-    description:
-      "An example blog site built using Astro and Tailwind, utilizing the power of SSG.",
+    title: "Blogsignal",
+    description: "Sample landing page with some fancy✨ animations.",
     isSideProject: true,
     hasDemo: true,
-    hasCode: false,
-    demoUrl: "https://averageblogastro.vercel.app/",
-    codeUrl: "",
+    hasCode: true,
+    demoUrl: "https://blogsignal.vercel.app/",
+    codeUrl: "https://github.com/ImZaryab/blogsignal",
   },
   {
     title: "Planzy",
@@ -98,17 +87,15 @@ export default function Home() {
               />
               <div>
                 <h1 className="text-xl text-foreground">Zaryab Husain Ghori</h1>
-                <h2 className="text-zinc-400">Designer & Developer</h2>
+                <h2 className="text-zinc-400">Developer & Designer</h2>
               </div>
             </div>
 
             <div className="text-zinc-400">
               <p>
-                Deep expertise in building data-intensive web applications and
-                end-to-end product ownership from ideation and engineering
-                through testing, deployment, and monitoring. Proven ability to
-                take products from zero to production in fast-paced startup
-                environments.
+                End-to-End product ownership, deep expertise in building
+                data-intensive web applications and taking products from zero to
+                production in fast-paced startup environments.
               </p>
             </div>
 
@@ -148,7 +135,7 @@ export default function Home() {
           <div className="w-full flex flex-col gap-10">
             <div className="flex items-center gap-4">
               <Image
-                src={"/scream.webp"}
+                src={"/me.jpeg"}
                 height={86}
                 width={86}
                 alt=""
@@ -156,35 +143,26 @@ export default function Home() {
               />
               <div>
                 <h1 className="text-lg">Zaryab Husain Ghori</h1>
-                <h2 className="text-zinc-400">Designer & Developer</h2>
+                <h2 className="text-zinc-400">Developer & Designer</h2>
               </div>
             </div>
 
             <div className="text-zinc-400">
               <p>
-                A challenge-driven full stack developer experienced in building
-                complex web applications, thriving in fast-paced environments,
-                and taking on leadership roles.
+                End-to-End product ownership, deep expertise in building
+                data-intensive web applications and taking products from zero to
+                production in fast-paced startup environments.
               </p>
             </div>
 
             <div className="text-zinc-400">
               <ul className="flex flex-col gap-2">
-                <li>
-                  Full Stack Engineer @ AIO <br /> (Jan, 2024 - Present)
-                </li>
-                <li>
-                  Head of Operations @ Virtury <br /> (Jun, 2023 - Dec, 2023)
-                </li>
-                <li>
-                  Software Engineer @ Virtury <br /> (Jan, 2023 - Jun, 2023)
-                </li>
-                <li>
-                  Full Stack Intern @ Zaytrics <br /> (Jul, 2021 - Sep 2021)
-                </li>
-                <li>
-                  SEO Intern @ E-strats <br /> (Jul, 2019 - Sep 2019)
-                </li>
+                <li>Technical Consultant @ Akkar (Jan, 2026 - Mar, 2026)</li>
+                <li>Full Stack Engineer @ AIO (Jan, 2024 - Jan, 2026)</li>
+                <li>Head of Operations @ Virtury (Jun, 2023 - Dec, 2023)</li>
+                <li>Software Engineer @ Virtury (Jan, 2023 - Jun, 2023)</li>
+                <li>Full Stack Intern @ Zaytrics (Jul, 2021 - Sep 2021)</li>
+                <li>SEO Intern @ E-strats (Jul, 2019 - Sep 2019)</li>
               </ul>
             </div>
 
