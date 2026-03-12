@@ -16,7 +16,10 @@ const LinkBadge = ({
   border = true,
 }: LinkBadgeProps) => {
   return (
-    <button disabled={disabled} className="disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30 disabled:select-none">
+    <button
+      disabled={disabled}
+      className="disabled:pointer-events-none disabled:cursor-not-allowed disabled:opacity-30 disabled:select-none"
+    >
       <a
         aria-disabled={disabled}
         target={disabled ? "_self" : "_blank"}

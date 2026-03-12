@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const socials = [
   {
-    title: "LinkedIn",
+    title: "linkedIn",
     url: "https://www.linkedin.com/in/zaryab-husain-ghori-30113359/",
   },
   {
-    title: "Github",
+    title: "github",
     url: "https://github.com/imzaryab",
   },
   {
-    title: "Codepen",
+    title: "codepen",
     url: "https://codepen.io/ImZaryab",
   },
 ];
@@ -26,9 +26,9 @@ const projects = [
       "Auto generate ready to publish anime reel for a given voiceover",
     isSideProject: true,
     hasDemo: true,
-    hasCode: false,
+    hasCode: true,
     demoUrl: "https://anime-reel-builder.vercel.app/",
-    codeUrl: "",
+    codeUrl: "https://github.com/ImZaryab/anime-reel-builder",
   },
   {
     title: "Wallhaven",
@@ -90,7 +90,7 @@ export default function Home() {
           <div className="w-full flex flex-col gap-10">
             <div className="flex items-center gap-4">
               <Image
-                src={"/scream.webp"}
+                src={"/me.jpeg"}
                 height={86}
                 width={86}
                 alt=""
@@ -104,9 +104,11 @@ export default function Home() {
 
             <div className="text-zinc-400">
               <p>
-                A challenge-driven full stack developer experienced in building
-                complex web applications, thriving in fast-paced environments,
-                and taking on leadership roles.
+                Deep expertise in building data-intensive web applications and
+                end-to-end product ownership from ideation and engineering
+                through testing, deployment, and monitoring. Proven ability to
+                take products from zero to production in fast-paced startup
+                environments.
               </p>
             </div>
 
@@ -235,13 +237,13 @@ export default function Home() {
                     <div className="flex items-center gap-2">
                       <LinkBadge
                         border={false}
-                        title="Demo"
+                        title="demo"
                         href={project.demoUrl ?? "#"}
                         disabled={!project.hasDemo}
                       />
                       <LinkBadge
                         border={false}
-                        title="Code"
+                        title="code"
                         href={project.codeUrl ?? "#"}
                         disabled={!project.hasCode}
                       />
