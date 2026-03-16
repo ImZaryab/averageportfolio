@@ -23,12 +23,21 @@ const projects = [
   {
     title: "Anime Reel Builder",
     description:
-      "Auto generate ready to publish anime reel for a given voiceover",
+      "Auto generate ready to publish anime reel for a given voiceover.",
     isSideProject: true,
     hasDemo: true,
     hasCode: true,
     demoUrl: "https://anime-reel-builder.vercel.app/",
     codeUrl: "https://github.com/ImZaryab/anime-reel-builder",
+  },
+  {
+    title: "BitRobot Dashboard",
+    description: "Demo dashboard built for a robotics company.",
+    isSideProject: true,
+    hasDemo: true,
+    hasCode: true,
+    demoUrl: "https://bit-robot-assessment.vercel.app/",
+    codeUrl: "https://github.com/ImZaryab/bit-robot-assessment",
   },
   {
     title: "Wallhaven",
@@ -47,25 +56,6 @@ const projects = [
     hasCode: true,
     demoUrl: "https://imzaryab.github.io/adhost/",
     codeUrl: "https://github.com/ImZaryab/adhost",
-  },
-  {
-    title: "Blogsignal",
-    description: "Sample landing page with some fancy✨ animations.",
-    isSideProject: true,
-    hasDemo: true,
-    hasCode: true,
-    demoUrl: "https://blogsignal.vercel.app/",
-    codeUrl: "https://github.com/ImZaryab/blogsignal",
-  },
-  {
-    title: "Planzy",
-    description:
-      "An app that allows participants to create and vote for plans. Built using NextJs, Pocketbase and Tailwind.",
-    isSideProject: true,
-    hasDemo: true,
-    hasCode: true,
-    demoUrl: "https://planzy-web.vercel.app/",
-    codeUrl: "https://github.com/ImZaryab/planzy-web",
   },
 ];
 
