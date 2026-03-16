@@ -6,15 +6,15 @@ import Image from "next/image";
 
 const socials = [
   {
-    title: "linkedIn",
+    title: "LinkedIn",
     url: "https://www.linkedin.com/in/zaryab-husain-ghori-30113359/",
   },
   {
-    title: "github",
+    title: "Github",
     url: "https://github.com/imzaryab",
   },
   {
-    title: "codepen",
+    title: "Codepen",
     url: "https://codepen.io/ImZaryab",
   },
 ];
@@ -23,7 +23,7 @@ const projects = [
   {
     title: "Anime Reel Builder",
     description:
-      "Auto generate ready to publish anime reel for a given voiceover.",
+      "Auto generate ready-to-publish anime reel for a given voiceover.",
     isSideProject: true,
     hasDemo: true,
     hasCode: true,
@@ -61,7 +61,7 @@ const projects = [
 
 export default function Home() {
   return (
-    <main className="bg-[#151515] sm:bg-backdrop min-h-dvh w-full flex flex-col gap-10 items-center sm:p-12 selection:bg-slate-700 lowercase overflow-hidden">
+    <main className="bg-[#151515] sm:bg-backdrop min-h-dvh w-full flex flex-col gap-10 items-center sm:p-12 selection:bg-slate-700 overflow-hidden">
       {/* HERO SECTION FOR MD-LG SCREENS */}
       <section className="hidden w-full sm:w-[80%] lg:w-[60%] xl:max-w-[40%] sm:flex justify-center relative">
         <Spotlight />
@@ -106,7 +106,7 @@ export default function Home() {
                 href="./resume-zaryab.pdf"
                 className="py-2 px-6 rounded-full flex items-center gap-1 border border-slate-700 hover:cursor-pointer hover:bg-slate-700 hover:text-white transition duration-300"
               >
-                <span>résume</span>
+                <span>Résume</span>
                 <Image
                   src={"/download.svg"}
                   height={24}
@@ -158,7 +158,7 @@ export default function Home() {
 
             <div className="text-zinc-400 w-full flex justify-end">
               <button className="py-2 px-6 rounded-full flex items-center gap-1 border border-slate-700 hover:bg-slate-700 hover:text-white transition duration-300">
-                <span>résume</span>
+                <span>Résume</span>
                 <Image
                   src={"/download.svg"}
                   height={24}
@@ -205,13 +205,13 @@ export default function Home() {
                     <div className="flex items-center gap-2">
                       <LinkBadge
                         border={false}
-                        title="demo"
+                        title="Demo"
                         href={project.demoUrl ?? "#"}
                         disabled={!project.hasDemo}
                       />
                       <LinkBadge
                         border={false}
-                        title="code"
+                        title="Code"
                         href={project.codeUrl ?? "#"}
                         disabled={!project.hasCode}
                       />
